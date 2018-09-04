@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1= title
+
+  if error
+    p Error getting dynamic content.
+  else
+    p Lisätietoja pelaajasta "Boots of Spped"
+    p Alhaaltä pääset tutustumaan Boots of Speedin op.gg -tileihin sekä katsomaan videon hänen pelaamisesta
+    div(class='eune-servu')
+     a(href='http://eune.op.gg/summoner/userName=boots+of+speed') Europe Nordic & East -serveri
+    div(class='euw-servu')     
+     a(href='http://euw.op.gg/summoner/userName=boots+of+speed') Europe West -serveri
+
+    div(class='youtube')
+        iframe(type='text/html' width='640' height='390'
+        src='http://www.youtube.com/embed/TJcl3xanTo0?autoplay=1&origin=https://www.youtube.com/watch?v=TJcl3xanTo0'
+        frameborder='0')

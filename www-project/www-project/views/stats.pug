@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Tilastoissa on aluksi laskettu kda sekä tapot, kuolemat sekä assistit on eroteltu erikseen lopussa
+    div(class='pelit')
+      ul
+      each stats in stats_list
+        li 
+          |  Champion = #{stats.champion}, Rooli = #{stats.role}
+          |  #{stats.kills}/#{stats.deaths}/#{stats.assists} = #{stats.kda},
+          | Tilaston ID = #{stats._id}
+      else
+        li Täällä ei ole tilastoja

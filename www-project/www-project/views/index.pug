@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+
+    div(class='esittely')
+        p Tällä sivulla pääset tutustumaan "Boots of Speed" -pelaajan tilastoihin sekä kirjaamaan niitä itse lisää
+
+    div(class='stats_maara')  
+        p #[strong Tallennettujen pelien määrä:] !{data.game_count}

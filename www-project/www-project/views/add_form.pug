@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1= title
+  
+  form(method='POST' action='')
+    div.form-group
+        label(for='Champion') Champion:
+        input#Champion.form-control(type='text', placeholder='Nimeä Champion' name='Champion' required='true' )
+    div.form-group
+        label(for='role') Rooli:
+        input#role.form-control(type='text', placeholder='Rooli ' name='role' required='true' )
+    div.form-group
+        label(for='kills') Kills:
+        input#kills.form-control(type='number',  min='0', placeholder='0 ' name='kills' required='true' )
+    div.form-group
+        label(for='deaths') Deaths:
+        input#deaths.form-control(type='number', min='0', placeholder='0 ' name='deaths' required='true' )
+    div.form-group
+        label(for='deaths') Assists:
+        input#deaths.form-control(type='number', min='0',placeholder='0 ' name='assists' required='true' )    
+        
+    button.btn.btn-primary(type='submit') Submit
+    

@@ -1,0 +1,6 @@
+o	Sivusto hyödyntää tietokantaa lukien ja kirjoittaen 
+o	Sivusto hyödyntää käyttöliittymissä template-moottoria (pug)
+o	Sivusto hyödyntää tyylitiedostoja 
+o	Sivustoa ohjelmoitaessa on käytetty Git-versionhallintaa (https://github.com/rniinim/www-groupwork.git)
+o	Opettajan tarkastamistyötä helpottava raportti on laadittu hyvin 
+o	Sivustossa on hyödynnetty muitakin kuin Local Library –sovelluksessa hyödynnettyjä moduuleja (module iframe)
